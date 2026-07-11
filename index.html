@@ -54,6 +54,25 @@
     setting, and an estimated "gold saved" figure.</li>
 </ul>
 
+<h2>Friends (optional)</h2>
+<p>
+  If you've created a cloud account, you can optionally add friends inside
+  the App using your friend code. A friend code is not tied to your real
+  identity, but it is deliberately look-up-able by any other signed-in Axiom
+  user, so they can find you if you share it with them — this is how the
+  add-friend flow works.
+</p>
+<p>
+  A friend request only becomes active once the other person accepts it —
+  adding someone by code never happens automatically. Once mutually
+  accepted, a friend can see only the specific comparison stats you've
+  individually turned on in Settings (rank, streak, and/or achievement
+  count) — never your inventory, equipment, entitlement status, activity
+  log, or any other data. Turning a stat off removes it for every friend
+  immediately, not just going forward. You can remove a friend at any time,
+  which immediately revokes their access to your comparison stats.
+</p>
+
 <h2>What we never collect, sync, or have any way to see</h2>
 <ul>
   <li><strong>Birthdate and birth time</strong> — even if you voluntarily
@@ -72,9 +91,12 @@
 <p>
   Axiom's cloud features are built on <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>,
   which provides authentication and database hosting on our behalf. Access to
-  your data is restricted at the database level so that only you can ever
-  read or write your own account's data — not other users, and not us,
-  through the app itself.
+  your data is restricted at the database level: only you can ever read or
+  write your own account's save data, and not us, through the app itself.
+  The one deliberate exception is the optional Friends feature above — your
+  friend code is look-up-able by other users, and a friend you've mutually
+  accepted can read the specific comparison stats you've opted to share.
+  Everything else about your account stays exactly as restricted as before.
 </p>
 
 <h2>Data retention and deletion</h2>
@@ -84,17 +106,15 @@
   your existing data from our servers.
 </p>
 <p>
-  To permanently delete your cloud account and all associated data, email
-  <strong>Maahesacademy999@gmail.com</strong> with the email address you signed
-  up with, and we will delete it within a reasonable time. Deleting your
-  cloud account never affects your local, on-device save — that data stays
-  on your device regardless.
+  To permanently delete your cloud account and all associated data —
+  including your save snapshot, friend list, and friend code — use the
+  "Delete account" option in the App's Cloud Sync settings, which deletes
+  everything immediately and irreversibly. If you're unable to use the App,
+  you can instead email <strong>Maahesacademy999@gmail.com</strong> with the
+  email address you signed up with, and we will delete it within a
+  reasonable time. Deleting your cloud account never affects your local,
+  on-device save — that data stays on your device regardless.
 </p>
-<div class="note">
-  Before launch: Google Play requires either an in-app deletion flow or a
-  reachable web-based deletion request path for any app with account
-  creation — see the checklist notes for what still needs to be built here.
-</div>
 
 <h2>Children's privacy</h2>
 <p>
